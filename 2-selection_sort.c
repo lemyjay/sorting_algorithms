@@ -14,6 +14,9 @@ void selection_sort(int *array, size_t size)
 	int *address;
 	bool swapped = false;
 
+	if (array == NULL || size < 2)
+		return;
+
 	for (i = 0; i < size - 1; i++)
 	{
 		temp = array[i];
